@@ -38,7 +38,7 @@ export const resolvers = {
       return employeModel.create(args)
     },
     updateEmploye(source, args) {
-      return employeModel.update(args.id, args.input)
+      return employeModel.update(args.id, args)
     },
     deleteEmploye(source, args) {
       return employeModel.delete(args.id)
